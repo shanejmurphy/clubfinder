@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<style name="actionbar_style" parent="Theme.Sherlock">
+		<item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="@android:panelFullBackground">@color/DarkTransparentBlack</item>
+        <item name="@android:panelColorBackground">@color/DarkTransparentBlack</item>
+        <item name="@android:panelBackground">@color/DarkTransparentBlack</item>
+        <item name="@android:actionMenuTextColor">@color/White</item>
+        <item name="actionMenuTextColor">@color/White</item>
+	</style>
+	
+    
+	<style name="actionbar_textAppearance" parent="@style/TextAppearance.Sherlock.Widget.ActionBar.Menu">
+    	<item name="android:textSize">18sp</item>
+    	<item name="@android:textSize">18sp</item>
+    	
+    </style>
+	
+</resources>
+<!--         
+<item name="android:textAppearance">@style/actionbar_textAppearance</item>
+<item name="@android:actionMenuTextColor">@color/White</item>
+        <item name="actionMenuTextColor">@color/White</item> 
+                <item name="@android:actionMenuTextAppearance">@style/actionbar_textAppearance</item>
+        -->

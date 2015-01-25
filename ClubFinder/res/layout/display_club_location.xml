@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--  <com.google.android.maps.MapView-->
+    <fragment 
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/clubview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        map:uiZoomControls="false"/>
+    
+        <!--  android:apiKey="0xYk_VntM8Ei3u_h2y-AIVZwiCd1i0CqfxiSPgg"
+        android:clickable="true"
+        android:enabled="true" />-->
+    
+     <!-- This is the layout for the buttons at the bottom -->
+  
+	    
+	<RelativeLayout 
+	    android:id="@+id/club_footer"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dip"
+	    android:orientation="horizontal"
+	    android:layout_alignParentBottom="true"
+	    android:background="#CD000000"
+	    android:gravity="center"> 
+		    
+		<LinearLayout
+		    android:id="@+id/club_linear"
+		    android:layout_width="fill_parent"
+		    android:layout_height="50dip"
+		    android:orientation="horizontal"
+		    android:layout_alignParentBottom="true"
+		    android:gravity="center">
+		    
+			<ImageButton
+		      	android:id="@+id/directions_button"
+		      	android:layout_width="wrap_content"
+		      	android:layout_height="wrap_content"
+		      	android:src="@drawable/directions"
+		      	android:background="@android:color/transparent"
+		      	android:gravity="center"
+			    android:layout_weight="1"
+		      	android:contentDescription="@string/directions_button">
+			</ImageButton>
+			
+			<View
+		        android:id="@+id/map_divider"
+	            android:layout_width="1dip"
+	            android:layout_height="match_parent"
+	            android:layout_marginTop="4dip"
+	            android:layout_marginBottom="4dip"
+	            android:background="?attr/dividerVertical"/>
+	
+		  	<ImageButton
+		      	android:id="@+id/layers_button"
+		      	android:layout_width="wrap_content"
+		      	android:layout_height="wrap_content"
+		      	android:src="@drawable/layers"
+		      	android:background="@android:color/transparent"
+		      	android:gravity="center"
+			    android:layout_weight="1"
+		      	android:contentDescription="@string/layers_button">
+	      	</ImageButton>
+      
+	  	</LinearLayout>
+
+		<LinearLayout 
+		    android:id="@+id/waiting_layout"
+		    android:layout_width="240dip"
+		    android:layout_height="40dip"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true">
+		    
+			 <ProgressBar
+			     android:id="@+id/my_location_progress"
+			     android:layout_width="40dip"
+			     android:layout_height="40dip"
+			     android:gravity="center"/>
+			
+			<TextView
+			     android:id="@+id/waiting_text"
+			     android:layout_width="wrap_content"
+			     android:layout_height="40dip"
+			     android:maxLines="1"
+			     android:paddingLeft="8dip"
+			     android:gravity="center"
+			     android:text="@string/waiting"
+			     android:textColor="#f5f5f5"
+			     android:textSize="18dip" />
+			
+		</LinearLayout>
+	 
+	</RelativeLayout>
+	<!-- 
+		        style="?android:attr/borderlessButtonStyle"
+		      
+		      android:layout_alignBottom="@+id/directions_button"
+	      android:layout_alignTop="@+id/directions_button"
+	      android:layout_toRightOf="@+id/my_location_progress"
+	android:layout_above="@id/map_footer"  -->
+
+</RelativeLayout>

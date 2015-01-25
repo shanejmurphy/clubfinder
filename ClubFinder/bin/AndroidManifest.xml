@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.androidProjects.personal"
+    android:versionCode="50"
+    android:versionName="1.50">
+    
+    <permission
+          android:name="com.androidProjects.personal.permission.MAPS_RECEIVE"
+          android:protectionLevel="signature"/>
+
+    <!-- Google Play Services wont work on naything older than 8-->
+    <uses-sdk
+        android:minSdkVersion="9" 
+        android:targetSdkVersion="17" />
+    
+    <uses-feature
+  		android:glEsVersion="0x00020000"
+  		android:required="true"/>
+        
+	<uses-permission android:name="com.androidProjects.personal.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/clubfinder"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sherlock">
+        
+        <meta-data
+		    android:name="com.google.android.maps.v2.API_KEY"
+		    android:value="AIzaSyDfC94v0WZia6W_2Hg4y72cgxPdw5E6cVE"/> 
+		    
+       	<meta-data android:name="com.google.android.gms.version"
+               android:value="@integer/google_play_services_version"/>
+    
+		 <!--  android:value="AIzaSyAKxW-YH2jPwA0xc61j5RlpoPl9h8zW5DE"/>   
+		 debug cert = android:value="AIzaSyBZ_1J5wS5jRH8PAZlZjqwM1OonaOvpdNQ"/>
+		 release cert = android:value="AIzaSyAwJE1UZBNORIpH06UNF3t0A6K7FRjfFwc"/>
+		 -->
+		 
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name=".GAAClubFinderActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar"
+            android:launchMode="standard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!--  <action android:name="android.intent.action.SEARCH" /> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DisplayClubLocation"
+            android:label="@string/title_activity_display_loc"
+            android:theme="@style/actionbar_style" 
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.androidProjects.personal.GAAClubFinderActivity" />
+        </activity>
+        <activity
+            android:name=".DisplayMapActivity"
+            android:label="@string/title_activity_display_map"
+            android:theme="@style/actionbar_style" 
+            android:configChanges="orientation|screenSize">
+
+            <!--
+                <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.androidProjects.personal.GAAClubFinderActivity" />
+            -->
+        </activity>
+        <activity
+            android:name="com.androidProjects.personal.ListDirectionsActivity"
+            android:label="@string/title_activity_list_directions"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        </activity>
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        
+        <activity android:name=".LaunchGPS" android:screenOrientation="portrait">
+		  <intent-filter>       
+		    <action android:name="android.intent.action.SEND" />
+		    <category android:name="android.intent.category.DEFAULT" />
+		  </intent-filter>
+		</activity>
+    </application>
+</manifest>

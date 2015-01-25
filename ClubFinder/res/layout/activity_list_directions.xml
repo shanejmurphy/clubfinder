@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/directions"
+    android:orientation="vertical" >
+    
+        <RelativeLayout 
+		    android:id="@+id/list_footer"
+		    android:layout_width="match_parent"
+		    android:layout_height="50dip"
+		    android:layout_alignParentBottom="true"
+		    android:background="#CD000000"
+		    android:gravity="center" >
+	    
+		    <ImageButton
+		         android:id="@+id/list_button"
+		         android:layout_width="fill_parent"
+		         android:layout_height="match_parent"
+			     android:src="@drawable/map"
+			     android:background="@color/DarkTransparentBlack"
+		         android:contentDescription="@string/view_map">
+	     	</ImageButton>
+
+		</RelativeLayout>
+	    
+	    
+	    <ListView 
+	        android:id="@+id/mainListView"
+	        android:layout_width="fill_parent"   
+          	android:layout_height="fill_parent"
+          	android:layout_above="@id/list_footer"   >  
+        </ListView>  
+
+
+</RelativeLayout>

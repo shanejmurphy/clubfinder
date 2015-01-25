@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<menu xmlns:android="http://schemas.android.com/apk/res/android">	
+    <item android:id="@+id/layer" 
+        android:title="@string/layer"
+        android:icon="@drawable/layers" 
+	    android:showAsAction="collapseActionView">
+	    <menu>
+	        <group android:checkableBehavior="all">
+		        <item android:id="@+id/sat_view" 
+		            android:title="@string/sat" 
+		            android:showAsAction="collapseActionView"/>
+		        
+		        <item android:id="@+id/tra_view" 
+		            android:title="@string/traffic" 
+		            android:showAsAction="collapseActionView"/>
+	        </group>
+	   </menu>
+   </item>
+   <item android:id="@+id/route"
+       android:title="@string/route"
+       android:icon="@drawable/directions"
+       android:showAsAction="collapseActionView">
+       <menu>
+	        <group android:checkableBehavior="single">
+	            <item android:id="@+id/route_a" 
+		            android:title="@string/route_a"
+		            android:checked="true" 
+		            android:showAsAction="collapseActionView"/>
+		        
+		        <item android:id="@+id/route_b" 
+		            android:title="@string/route_b" 
+		            android:showAsAction="collapseActionView"/>
+	        </group>
+	   </menu>
+   </item>
+</menu>-->
+    <menu xmlns:android="http://schemas.android.com/apk/res/android"></menu>

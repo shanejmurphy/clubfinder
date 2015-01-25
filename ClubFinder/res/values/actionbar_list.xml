@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="action_list1">
+        <item>@string/dub_gaa</item>
+        <item>@string/len_rugby</item>
+        <item>@string/len_hockey</item>
+    </string-array>
+</resources>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="version_code">51</string>
+    <string name="version_name">1.51</string>
+    <string name="pro_pkg">com.clubfinder.pro</string>
+    <string name="club">Ballyboden St. Enda\'s GAA Club</string>
+    <string name="app_name">ClubFinder</string>
+    <string name="search_hint">Search Clubs</string>
+    <string name="search_title">Search</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_display_map">Directions Map</string>
+    <string name="title_activity_display_loc">Club Location</string>
+    <string name="logo_string">Logo</string>
+    <string name="infobar_string"></string>
+    <string name="divider">|</string>
+    <string name="info_string">16.2 km - 18 mins with traffic.</string>
+    <string name="list_button1">List</string>
+    <string name="nav_button">Google Navigation</string>
+    <string name="title_direction_list">Directions</string>
+    <string name="title_activity_list_directions">Directions List</string>
+    <string name="view_list"> LIST </string>
+    <string name="layer">LAYERS</string>
+    <string name="route">ROUTES</string>
+    <string name="map">Map</string>
+    <string name="sat">Satellite</string>
+    <string name="traffic">Traffic</string>
+    <string name="directions_button">Get Directions</string>
+    <string name="waiting"> Waiting for Location&#8230; </string>
+    <string name="view_map"> MAP </string>
+    <string name="routes_button">Change Route</string>
+    <string name="layers_button">Change View</string>
+    <string name="list_button">Show List</string>
+    <string name="cancel">Cancel</string>
+    <string name="about">About</string>
+    <string name="remove_ads">Remove Ads</string>
+    <string name="rate">Rate App</string>
+    <string name="ok">OK</string>
+	<string name="remove_ads_message">"Please support the Developer of this app by purchasing ClubFinder Pro for a small fee from the Google Play Store. ClubFinder Pro is completely ad free."</string>
+    
+    <string name="about_clubfinder">"ClubFinder was developed as a means to provide parents, players, mentors and supporters with the ability to quickly get directions to various sports clubs throughout Ireland. Please spread the word and let others know about this great service. Thank You for downloading ClubFinder."</string>
+    
+    <string-array name="view_list">
+        <item>@string/map</item>
+        <item>@string/sat</item>
+    </string-array>
+
+    <string name="balloon_item_title"> Ballyboden St. Endas - Clubhouse </string>
+    <string name="balloon_item_snippet"></string>
+    <string name="ant_gaa"> Antrim GAA </string>
+    <string name="arm_gaa"> Armagh GAA </string>
+    <string name="car_gaa"> Carlow GAA </string>
+    <string name="cav_gaa"> Cavan GAA </string>
+    <string name="cla_gaa"> Clare GAA </string>
+    <string name="crk_gaa"> Cork GAA </string>
+    <string name="der_gaa"> Derry GAA </string>
+    <string name="don_gaa"> Donegal GAA </string>
+    <string name="dow_gaa"> Down GAA </string>
+    <string name="dub_gaa"> Dublin GAA </string>
+    <string name="fer_gaa"> Fermanagh GAA </string>
+    <string name="gal_gaa"> Galway GAA </string>
+    <string name="ker_gaa"> Kerry GAA </string>
+    <string name="kil_gaa"> Kildare GAA </string>
+    <string name="kik_gaa"> Kilkenny GAA </string>
+    <string name="lao_gaa"> Laois GAA </string>
+    <string name="lei_gaa"> Leitrim GAA </string>
+    <string name="lim_gaa"> Limerick GAA </string>
+    <string name="lon_gaa"> Longford GAA </string>
+    <string name="lou_gaa"> Louth GAA </string>
+    <string name="may_gaa"> Mayo GAA </string>
+    <string name="mea_gaa"> Meath GAA </string>
+    <string name="mon_gaa"> Monaghan GAA </string>
+    <string name="off_gaa"> Offaly GAA </string>
+    <string name="ros_gaa"> Roscommon GAA </string>
+    <string name="sli_gaa"> Sligo GAA </string>
+    <string name="tip_gaa"> Tipperary GAA </string>
+    <string name="tyr_gaa"> Tyrone GAA </string>
+    <string name="wat_gaa"> Waterford GAA </string>
+    <string name="wes_gaa"> Westmeath GAA </string>
+    <string name="wex_gaa"> Wexford GAA </string>
+    <string name="wic_gaa"> Wicklow GAA </string>
+    <string name="len_rugby"> Leinster Rugby </string>
+    <string name="mun_rugby"> Munster Rugby </string>
+    <string name="uls_rugby"> Ulster Rugby </string>
+    <string name="con_rugby"> Connacht Rugby </string>
+    <string name="len_hockey"> Leinster Hockey </string>
+    <string name="mun_hockey"> Munster Hockey </string>
+    <string name="uls_hockey"> Ulster Hockey </string>
+    <string name="con_hockey"> Connacht Hockey </string>
+
+    <string-array name="action_list">
+        <item>@string/con_rugby</item>
+        <item>@string/len_rugby</item>
+        <item>@string/mun_rugby</item>
+        <item>@string/uls_rugby</item>
+        <item>@string/con_hockey</item>
+        <item>@string/len_hockey</item>
+        <item>@string/mun_hockey</item>
+        <item>@string/uls_hockey</item>
+        <item>@string/ant_gaa</item>
+        <item>@string/arm_gaa</item>
+        <item>@string/car_gaa</item>
+        <item>@string/cav_gaa</item>
+        <item>@string/cla_gaa</item>
+        <item>@string/crk_gaa</item>
+        <item>@string/der_gaa</item>
+        <item>@string/don_gaa</item>
+        <item>@string/dow_gaa</item>
+        <item>@string/dub_gaa</item>
+        <item>@string/fer_gaa</item>
+        <item>@string/gal_gaa</item>
+        <item>@string/ker_gaa</item>
+        <item>@string/kil_gaa</item>
+        <item>@string/kik_gaa</item>
+        <item>@string/lao_gaa</item>
+        <item>@string/lei_gaa</item>
+        <item>@string/lim_gaa</item>
+        <item>@string/lon_gaa</item>
+        <item>@string/lou_gaa</item>
+        <item>@string/may_gaa</item>
+        <item>@string/mea_gaa</item>
+        <item>@string/mon_gaa</item>
+        <item>@string/off_gaa</item>
+        <item>@string/ros_gaa</item>
+        <item>@string/sli_gaa</item>
+        <item>@string/tip_gaa</item>
+        <item>@string/tyr_gaa</item>
+        <item>@string/wat_gaa</item>
+        <item>@string/wes_gaa</item>
+        <item>@string/wex_gaa</item>
+        <item>@string/wic_gaa</item>
+    </string-array>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_search">Search Clubs</string>
+    <string name="title_activity_club_search">ClubSearchActivity</string>
+
+</resources>

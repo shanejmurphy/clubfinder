@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--  <com.google.android.maps.MapView-->
+    <fragment 
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        map:uiZoomControls="false"/>  
+    
+     <!-- 
+     	android:layout_alignParentTop="true"
+        android:apiKey="0xYk_VntM8Ei3u_h2y-AIVZwiCd1i0CqfxiSPgg"
+        android:clickable="true"
+        android:enabled="true" 
+     
+     This is the layout for the buttons at the bottom -->
+
+	<LinearLayout 
+	    android:id="@+id/map_footer"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dip"
+	    android:orientation="horizontal"
+	    android:layout_alignParentBottom="true"
+	    android:background="#CD000000"
+	    android:gravity="center">  
+
+	    <ImageButton
+	      	android:id="@+id/map_routes_button"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	android:src="@drawable/route"
+	      	android:background="@android:color/transparent"
+	      	android:layout_weight="1"
+	      	android:contentDescription="@string/routes_button">
+      	</ImageButton>
+	    
+	    <View
+	        android:id="@+id/map_divider_1"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dip"
+            android:layout_marginBottom="4dip"
+            android:layout_gravity="center"
+            android:background="?attr/dividerVertical"/>
+	    
+	  	<ImageButton
+	         android:id="@+id/map_layers_button"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:src="@drawable/layers"
+	         android:background="@android:color/transparent"
+	         android:layout_weight="1"
+	         android:contentDescription="@string/layers_button">
+      	</ImageButton>
+      	
+	  	<View
+	        android:id="@+id/map_divider_2"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dip"
+            android:layout_marginBottom="4dip"
+            android:layout_gravity="center"
+            android:background="?attr/dividerVertical"/>
+	    
+	  	<ImageButton
+	         android:id="@+id/map_list_button"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:src="@drawable/list"
+	         android:background="@android:color/transparent"
+	         android:layout_weight="1"
+	         android:contentDescription="@string/list_button">
+      	</ImageButton>
+      	
+	  	<View
+	        android:id="@+id/map_divider_3"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dip"
+            android:layout_marginBottom="4dip"
+            android:layout_gravity="center"
+            android:background="?attr/dividerVertical"/>
+	    
+	  	<ImageButton
+	         android:id="@+id/map_nav_button"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:src="@drawable/navigation"
+	         android:background="@android:color/transparent"
+	         android:layout_weight="1"
+	         android:contentDescription="@string/nav_button">
+      	</ImageButton>
+
+	</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+      android:orientation="vertical"  
+      android:layout_width="fill_parent"  
+      android:layout_height="fill_parent">  
+        
+       <TextView
+	        android:id="@+id/distance"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/direction"
+	        android:layout_marginRight="2dp"
+	        android:maxLines="1"
+	        android:scrollHorizontally="false"
+	        android:textColor="#808080"
+	        android:textSize="14dp" />
+	    
+	    <TextView
+	        android:id="@+id/direction"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/distance"
+	        android:layout_marginRight="2dp"
+	        android:layout_toRightOf="@+id/num"
+	        android:maxLines="3"
+	        android:scrollHorizontally="false"
+	        android:textColor="#262626"
+	        android:textSize="18dp" />
+	
+	    <TextView
+	        android:id="@+id/num"
+	        android:layout_width="40dip"
+	        android:layout_height="fill_parent"
+	        android:layout_alignBottom="@+id/extra"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:gravity="center"
+	        android:textSize="20dp"
+			android:textColor="#808080"
+			/>
+	
+	    <TextView
+	        android:id="@+id/extra"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/direction"
+	        android:layout_toRightOf="@+id/num"
+	        android:maxLines="2"
+	        android:scrollHorizontally="false"
+	        android:textColor="#808080"
+	        android:textSize="14dp" />
+	
+	    <ImageView
+	        android:id="@+id/destPin"	
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="6dip"
+	        android:gravity="center"
+	        android:src="@drawable/destination_pin" />
+          
+ </RelativeLayout>
